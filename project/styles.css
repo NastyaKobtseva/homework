@@ -1,0 +1,478 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    text-indent: 50px;
+    gap: 10px;
+}
+
+.item_i { 
+  display: flex; 
+  justify-content: space-around; 
+  text-decoration: none; 
+  color: black; 
+  padding-right: 50px; 
+    margin-right: 50px; 
+}
+
+.item {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: black;
+    padding-right: 15px; 
+    margin-right: 15px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.item:hover,
+.emeil:hover,
+.number:hover {
+    color: #2196F3;
+    fill: #2196F3;
+}
+
+.emeil {
+    text-decoration: none;
+    color: black;
+}
+
+.number {
+  text-decoration: none; 
+  color: black;
+}
+
+.text-header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.right {
+    display: flex;
+    justify-content: space-around;
+    text-indent: 50px;
+    gap: 10px;
+}
+
+.text-after-header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.button {
+    cursor: pointer;
+    background-color: #2196F3;
+    -webkit-text-fill-color: rgb(253, 253, 253);
+    margin: auto;
+    width: 189px;
+    height: 49px;
+    top: 440px;
+    left: 724px;
+    font-family: Roboto; 
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.06em; 
+    text-align: center;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    flex-shrink: 0;
+}
+
+.pho {
+    padding-left: 20px;
+}
+
+.header-two-wow { 
+    height: 500px;
+    top: 80px;
+    background-image: url('./image/Img.header.png');
+    background-image: cover;
+    margin: 0 auto; 
+    padding: 0 20px; 
+    box-sizing: border-box;
+    padding-top: 150px;
+}
+
+.after-header-two-photo-and-text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+.attention-to-detil, .clock, .planning, .astronaut {
+    padding-left: 60px;
+}
+
+.h5-attention-to-detil, .h5-planninig-photo-text, .h5-modern-technology, .h5-punctuality {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.smaim {
+    padding: 21px; 
+    display: flex;
+    justify-content: center;
+}
+
+.smain-text-and-photo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.text1-smain {
+    position: absolute;
+    top: 208px;
+    left: 20px;
+    width: 31%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s;
+    color: white;
+}
+
+.text1-smain p {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.smain-text-and-photo:hover .text1-smain {
+    opacity: 1;
+}
+
+.text2-smain {
+    position: absolute;
+    top: 208px;
+    left: 309px;
+    width: 31.10%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s;
+    color: white;
+}
+
+.text2-smain p {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.smain-text-and-photo:hover .text2-smain {
+    opacity: 1;
+}
+
+.text3-smain {
+    position: absolute;
+    top: 208px;
+    left: 602px;
+    width: 30.70%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s;
+    color: white;
+}
+
+.text3-smain p {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.smain-text-and-photo:hover .text3-smain {
+    opacity: 1;
+}
+  
+h1 {
+    width: 696px;
+    height: 120px;
+    top: 280px;
+    left: 452px;
+    font-family: 'Roboto';
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-align: center; 
+    -webkit-text-fill-color: rgb(253, 253, 253);
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+}
+
+.our-team {
+    background-color: #F5F4FA;
+    padding-bottom: 94px;
+}
+
+.web {
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+}
+
+.card {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    background-color: aliceblue;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.card-igor, .card-olga, .card-mt, .card-m {
+    padding-top: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.product-designer, .frontend-developer, .marketing, .designer {
+    color: #757575;
+    font-size: 16px;
+    padding-bottom: 16px;
+}
+
+.social-networks-all {
+    padding-bottom: 30px;
+}
+
+.hhh {
+    cursor: pointer;
+    background-color: #fff;
+    opacity: 0.1;
+    width: 44px;
+    height: 44px;
+}
+
+.insta, .twitter, .facebook, .in,
+.insta-footer {
+    cursor: pointer;
+    transition: fill 0.3s;
+}
+
+.insta:hover, .twitter:hover, .facebook:hover, .in:hover {
+    fill: #2196F3;
+    fill-opacity: 1;
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.regular-customers-content {
+    padding-top: 94px;
+}
+
+.h3-regular-customers {
+    padding-bottom: 50px;
+}
+
+.regular-customers-photo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 94px;
+}
+
+h3, .h3-regular-customers {
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    text-align: center;
+   }
+
+.photo-one-regular-customers {
+    width: 170px; 
+      height: 92px; 
+      border-radius: 4px;
+    border: 2px solid #AFB1B8;
+    cursor: pointer;
+    transition: fill 0.3s;
+}
+
+.photo-one-regular-customers:hover {
+    border: 2px solid #2196F3;
+}
+
+.photo-2-regular-customers {
+    width: 170px; 
+    height: 92px; 
+    border-radius: 4px;
+    border: 2px solid #AFB1B8;
+    cursor: pointer;
+    transition: fill 0.3s;
+}
+
+.photo-2-regular-customers:hover {
+    border: 2px solid #2196F3;
+}
+
+.photo-3-regular-customers {
+    width: 170px; 
+      height: 92px; 
+      border-radius: 4px;
+      border: 2px solid #AFB1B8;
+      cursor: pointer;
+    transition: fill 0.3s;
+}
+
+.photo-3-regular-customers:hover {
+    border: 2px solid #2196F3;
+}
+
+.photo-4-regular-customers {
+    width: 170px; 
+      height: 92px; 
+      border-radius: 4px;
+      border: 2px solid #AFB1B8;
+      cursor: pointer;
+    transition: fill 0.3s;
+}
+
+.photo-4-regular-customers:hover {
+    border: 2px solid #2196F3;
+}
+
+.photo-5-regular-customers {
+    width: 170px; 
+      height: 92px; 
+      border-radius: 4px;
+      border: 2px solid #AFB1B8;
+      cursor: pointer;
+    transition: fill 0.3s;
+}
+
+.photo-5-regular-customers:hover {
+    border: 2px solid #2196F3;
+}
+
+.photo-6-regular-customers {
+    width: 170px; 
+    height: 92px; 
+    border-radius: 4px;
+    border: 2px solid #AFB1B8;
+    cursor: pointer;
+    transition: fill 0.3s;
+}
+
+.photo-6-regular-customers:hover {
+    border: 2px solid #2196F3;
+}
+
+.photo-regular-customers2-1 {
+    padding-top: 20px;
+    padding-left: 59px;
+}
+
+.photo-regular-customers2-1:hover {
+    fill: #087df9;
+}
+
+.photo-regular-customers2-2 {
+    padding-top: 20px;
+    padding-left: 62px;
+}
+
+.photo-regular-customers2-3{
+    padding-top: 23px;
+    padding-left: 59px;
+}
+
+.photo-regular-customers2-4{
+    padding-top: 20px;
+    padding-left: 51px;
+}
+
+.photo-regular-customers2-5 {
+    padding-top: 20px;
+    padding-left: 46px;
+}
+
+.photo-regular-customers2-6 {
+    padding-top: 18px;
+    padding-left: 40px;
+}
+
+.photo-reg:hover {
+    fill: #2196F3;
+    cursor: pointer;
+}
+
+.ttt:hover {
+    fill: #2196F3;
+    fill-opacity: 1;
+}
+
+.footer {
+    display: block;
+    background-color: #2F303A;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    padding-left: 50px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-content-two {
+    padding-left: 40px;
+}
+
+.p-footer {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+  display: flex;
+}
+
+.webs {
+  text-decoration: none;
+  color: white;
+}
