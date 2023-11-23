@@ -322,81 +322,87 @@ h3, .h3-regular-customers {
     text-align: center;
    }
 
-.photo-one-regular-customers {
-    width: 170px; 
-      height: 92px; 
-      border-radius: 4px;
-    border: 2px solid #AFB1B8;
-    cursor: pointer;
-    transition: fill 0.3s;
-}
-
-.photo-one-regular-customers:hover {
-    border: 2px solid #2196F3;
-}
-
-.photo-2-regular-customers {
-    width: 170px; 
-    height: 92px; 
+.photo-regular-customers2-1 {
+    width: 45px;
+    height: 57px;
     border-radius: 4px;
     border: 2px solid #AFB1B8;
     cursor: pointer;
     transition: fill 0.3s;
 }
 
-.photo-2-regular-customers:hover {
+.photo-regular-customers2-1:hover {
+    fill: #2196F3;
     border: 2px solid #2196F3;
 }
 
-.photo-3-regular-customers {
-    width: 170px; 
-      height: 92px; 
-      border-radius: 4px;
-      border: 2px solid #AFB1B8;
-      cursor: pointer;
-    transition: fill 0.3s;
-}
-
-.photo-3-regular-customers:hover {
-    border: 2px solid #2196F3;
-}
-
-.photo-4-regular-customers {
-    width: 170px; 
-      height: 92px; 
-      border-radius: 4px;
-      border: 2px solid #AFB1B8;
-      cursor: pointer;
-    transition: fill 0.3s;
-}
-
-.photo-4-regular-customers:hover {
-    border: 2px solid #2196F3;
-}
-
-.photo-5-regular-customers {
-    width: 170px; 
-      height: 92px; 
-      border-radius: 4px;
-      border: 2px solid #AFB1B8;
-      cursor: pointer;
-    transition: fill 0.3s;
-}
-
-.photo-5-regular-customers:hover {
-    border: 2px solid #2196F3;
-}
-
-.photo-6-regular-customers {
-    width: 170px; 
-    height: 92px; 
+.photo-regular-customers2-2 {
+    width: 45px;
+    height: 63px;
     border-radius: 4px;
     border: 2px solid #AFB1B8;
     cursor: pointer;
     transition: fill 0.3s;
 }
 
-.photo-6-regular-customers:hover {
+.photo-regular-customers2-2:hover {
+    fill: #2196F3;
+    border: 2px solid #2196F3;
+}
+
+.photo-regular-customers2-3 {
+    width: 45px;
+    height: 51px;
+    border-radius: 4px;
+    border: 2px solid #AFB1B8;
+    cursor: pointer;
+    transition: fill 0.3s;
+}
+
+.photo-regular-customers2-3:hover {
+    fill: #2196F3;
+    border: 2px solid #2196F3;
+}
+
+.photo-regular-customers2-4 {
+    width: 58px;
+    height: 57px;
+      border-radius: 4px;
+      border: 2px solid #AFB1B8;
+      cursor: pointer;
+    transition: fill 0.3s;
+}
+
+.photo-regular-customers2-4:hover {
+    fill: #2196F3;
+    border: 2px solid #2196F3;
+}
+
+.photo-regular-customers2-5{
+    width: 70px;
+    height: 59px;
+      border-radius: 4px;
+      border: 2px solid #AFB1B8;
+      cursor: pointer;
+    transition: fill 0.3s;
+}
+
+.photo-regular-customers2-5:hover {
+    fill: #2196F3;
+    border: 2px solid #2196F3;
+}
+
+.photo-regular-customers2-6 {
+    width: 101px;
+    height: 60px;
+    border-radius: 4px;
+    border: 2px solid #AFB1B8;
+    cursor: pointer;
+    transition: fill 0.3s;
+}
+
+.photo-regular-customers2-6:hover {
+    fill: #2196F3;
     border: 2px solid #2196F3;
 }
 
@@ -426,11 +432,6 @@ h3, .h3-regular-customers {
 
 .photo-regular-customers2-6 {
     padding: 20px 40px;
-}
-
-.photo-reg:hover {
-    fill: #2196F3;
-    cursor: pointer;
 }
 
 .ttt:hover {
