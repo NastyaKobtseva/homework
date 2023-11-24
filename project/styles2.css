@@ -236,6 +236,68 @@
     padding-bottom: 20px;
 }
 
+.p-footer-2 {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    padding-bottom: 21px;
+}
+
+.footer-content-3 {
+    padding-left: 93px;
+}
+
+.button-footer-input {
+    display: flex;
+    width: 160px;
+    height: 45px;
+    border-radius: 4px;
+    border: none;
+    background: #2196F3;
+    cursor: pointer;
+}
+
+.footer-input {
+    padding-left: 10px;
+}
+
+.input-and-social-networks {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-input {
+    width: 289px;
+    height: 42px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    border-radius: 4px;
+}
+
+.button-text {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    padding-top: 6px;
+    padding-left: 7px;
+}
+
+.icon-send {
+    padding-left: 10px;
+    padding-top: 9px;
+}
+
 .insta, .twitter, .facebook, .in,
 .insta-footer {
     cursor: pointer;

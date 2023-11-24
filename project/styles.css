@@ -106,7 +106,6 @@
 .after-header-two-photo-and-text {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     margin-top: 94px;
     margin-bottom: 94px;
 }
@@ -115,10 +114,31 @@
     padding-left: 60px;
 }
 
+.planning {
+    padding-top: 15px;
+}
+
 .h5-attention-to-detil, .h5-planninig-photo-text, .h5-modern-technology, .h5-punctuality {
     padding-top: 30px;
     padding-bottom: 10px;
     font-weight: bold;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 17px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.p-attention-to-detil, .p-punctuality, .p-planninig-photo-text, .p-modern-technology {
+    color: #696868;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
 }
 
 .smaim {
@@ -161,7 +181,7 @@
 .text2-smain {
     position: absolute;
     top: 208px;
-    left: 309px;
+    left: 309.5px;
     width: 31.10%;
     height: 20%;
     display: flex;
@@ -457,7 +477,7 @@ h3, .h3-regular-customers {
 
 .p-footer {
     color: #FFF;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -465,6 +485,68 @@ h3, .h3-regular-customers {
     letter-spacing: 0.42px;
     text-transform: uppercase;
     padding-bottom: 20px;
+}
+
+.p-footer-2 {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    padding-bottom: 21px;
+}
+
+.footer-content-3 {
+    padding-left: 93px;
+}
+
+.button-footer-input {
+    display: flex;
+    width: 160px;
+    height: 45px;
+    border-radius: 4px;
+    border: none;
+    background: #2196F3;
+    cursor: pointer;
+}
+
+.footer-input {
+    padding-left: 10px;
+}
+
+.input-and-social-networks {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-input {
+    width: 289px;
+    height: 42px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    border-radius: 4px;
+}
+
+.button-text {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    padding-top: 6px;
+    padding-left: 7px;
+}
+
+.icon-send {
+    padding-left: 10px;
+    padding-top: 9px;
 }
 
 a {
