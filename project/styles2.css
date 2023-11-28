@@ -38,6 +38,31 @@
 .emeil:hover,
 .number:hover {
     color: #2196F3;
+    fill: #2196F3;
+}
+
+.item a {
+    color: #212121;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.item a:hover::after {
+    position: absolute;
+    left: 35px;
+    display: block;
+    content: '';
+    width: 85px;
+    height: 4px;
+    background-color: #2196F3;
+    border-radius: 2px;
+    bottom: -25px;
 }
 
 .emeil {
@@ -70,7 +95,6 @@
 .text1-before-photo {
     width: 38px;
     height: 25px;
-    cursor: pointer;
     transition: background-color 0.3s;
     color: black;
     font-size: 16px;
@@ -84,7 +108,6 @@
 .text2-before-photo {
     width: 96px;
     height: 25px;
-    cursor: pointer;
     transition: background-color 0.3s;
     color: black;
     font-size: 16px;
@@ -98,7 +121,6 @@
 .text3-before-photo {
     width: 80px;
     height: 25px;
-    cursor: pointer;
     transition: background-color 0.3s;
     color: black;
     font-size: 16px;
@@ -112,7 +134,6 @@
 .text4-before-photo {
     width: 72px;
     height: 25px;
-    cursor: pointer;
     transition: background-color 0.3s;
     color: black;
     font-size: 16px;
@@ -126,7 +147,6 @@
 .text5-before-photo {
     width: 96px;
     height: 25px;
-    cursor: pointer;
     transition: background-color 0.3s;
     color: black;
     font-size: 16px;
@@ -144,10 +164,50 @@
 .text5-before-photo:hover {
     background-color: #2196F3;
     color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);;
 }
 
 .photo-text-all2 {
     margin-top: 50px;
+}
+
+.text-photo-all-popup {
+    position: relative;
+    overflow: hidden;
+}
+
+.photo1{
+    max-width: 100%;
+    height: auto;
+    transition: filter 0.5s ease;
+}
+
+.p-popup-text{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    background-color: rgba(33, 150, 243, 0.90);
+    padding: 63px;
+    opacity: 0;
+    width: 322px;
+    font-style: normal;
+    line-height: 28px;
+    letter-spacing: 0.54px;
+    font-family: 'Roboto';
+    padding-top: 114px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.text-photo-all-popup:hover .photo1 {
+    filter: brightness(70%);
+}
+
+.text-photo-all-popup:hover .p-popup-text {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-100%);
 }
 
 .h1-photo1-text, .h1-photo2-text, .h1-photo3-text, 

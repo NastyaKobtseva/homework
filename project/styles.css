@@ -23,12 +23,12 @@
 .item {
     display: flex;
     justify-content: space-around;
-    text-decoration: none;
     color: black;
     padding-right: 15px; 
     margin-right: 15px;
     cursor: pointer;
     transition: color 0.3s;
+    position: relative;
 }
 
 .item:hover,
@@ -36,6 +36,30 @@
 .number:hover {
     color: #2196F3;
     fill: #2196F3;
+}
+
+.item a {
+    color: #212121;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.item a:hover::after {
+    position: absolute;
+    left: 35px;
+    display: block;
+    content: '';
+    width: 85px;
+    height: 4px;
+    background-color: #2196F3;
+    border-radius: 2px;
+    bottom: -15px;
 }
 
 .emeil {
@@ -110,12 +134,21 @@
     margin-bottom: 94px;
 }
 
+.photo-attention-to-detil, .photo-clock, .photo-planning, .photo-astronaut {
+    width: 270px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+}
+
 .attention-to-detil, .clock, .planning, .astronaut {
-    padding-left: 60px;
+    padding-left: 93px;
+    padding-top: 20px;
 }
 
 .planning {
-    padding-top: 15px;
+    padding-top: 29px;
 }
 
 .h5-attention-to-detil, .h5-planninig-photo-text, .h5-modern-technology, .h5-punctuality {
@@ -258,7 +291,7 @@ h1 {
 
 .card {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     display: flex; 
     flex-direction: column; 
     align-items: center;
@@ -279,23 +312,22 @@ h1 {
 
 .social-networks-all {
     padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
-.hhh {
-    cursor: pointer;
-    background-color: #fff;
-    opacity: 0.1;
+.social {
     width: 44px;
     height: 44px;
+    background-color: #fff;
+    border-radius: 50%;
+    fill: #AFB1B8;
 }
 
-.insta, .twitter, .facebook, .in {
-    cursor: pointer;
-    transition: fill 0.3s;
-}
-
-.insta:hover, .twitter:hover, .facebook:hover, .in:hover {
-    fill: #2196F3;
+.social:hover {
+    background-color: #087df9;
+    fill: #fff;
 }
 
 .insta-footer {
@@ -455,8 +487,7 @@ h3, .h3-regular-customers {
 }
 
 .ttt:hover {
-    fill: #2196F3;
-    fill-opacity: 1;
+    fill: white;
 }
 
 .footer {
