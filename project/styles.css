@@ -183,21 +183,25 @@
 .smain-text-and-photo {
     display: flex;
     justify-content: center;
+}
+
+.smain-photo1 {
     position: relative;
 }
 
 .text1-smain {
     position: absolute;
-    top: 208px;
-    left: 20px;
-    width: 31%;
+    top: 89%;
+    left: 53%;
+    width: 93%;
     height: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
-    transition: opacity 0.5s;
+    transform: translate(-50%, -50%) translateY(100%);
+    transition: transform 0.5s, opacity 0.5s;
     color: white;
 }
 
@@ -207,22 +211,28 @@
     text-align: center;
 }
 
-.smain-text-and-photo:hover .text1-smain {
+.smain-photo1:hover .text1-smain {
+    transform: translate(-50%, -50%) translateY(0);
     opacity: 1;
 }
 
+.smain-photo2 {
+    position: relative;
+} 
+
 .text2-smain {
     position: absolute;
-    top: 208px;
-    left: 309.5px;
-    width: 31.10%;
+    top: 89%;
+    left: 53.5%;
+    width: 93%;
     height: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
-    transition: opacity 0.5s;
+    transform: translate(-50%, -50%) translateY(100%);
+    transition: transform 0.5s, opacity 0.5s;
     color: white;
 }
 
@@ -232,22 +242,28 @@
     text-align: center;
 }
 
-.smain-text-and-photo:hover .text2-smain {
+.smain-photo2:hover .text2-smain {
+    transform: translate(-50%, -50%) translateY(0);
     opacity: 1;
+}
+
+.smain-photo3 {
+    position: relative;
 }
 
 .text3-smain {
     position: absolute;
-    top: 208px;
-    left: 602px;
-    width: 30.70%;
+    top: 89%;
+    left: 53.5%;
+    width: 93%;
     height: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
-    transition: opacity 0.5s;
+    transform: translate(-50%, -50%) translateY(100%);
+    transition: transform 0.5s, opacity 0.5s;
     color: white;
 }
 
@@ -257,7 +273,8 @@
     text-align: center;
 }
 
-.smain-text-and-photo:hover .text3-smain {
+.smain-photo3:hover .text3-smain {
+    transform: translate(-50%, -50%) translateY(0);
     opacity: 1;
 }
   
