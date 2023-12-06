@@ -76,28 +76,40 @@
                       <form class="search-form">
                         <div class="input-after-button">
                           <div class="input-name">
-                            <label for="name"> Ім'я
+                            <label for="name"> 
+                                <p class="p-input-name">
+                                    Ім'я
+                                </p>
                               <div class="search">
-                                  <input type="name" class="name-search">
+                                  <input type="name" class="name-search" name="name">
                               </div>
                               </label>
                           </div>
                           <div class="input-tel">
-                            <label for="tel"> Телефон
+                            <label for="tel"> 
+                                <p class="p-input-name">
+                                    Телефон
+                                </p>
                               <div class="search2">
-                                <input type="tel" class="tel-search">
+                                <input type="tel" class="tel-search" name="phone">
                               </div>
                             </label>
                           </div>
                           <div class="input-emeil">
-                            <label for="emeil"> Пошта
+                            <label for="emeil">
+                                <p class="p-input-name">
+                                    Пошта
+                                </p>
                               <div class="serch3">
-                                <input type="emeil" class="emeil-search">
+                                <input type="emeil" class="emeil-search" name="emeil">
                               </div>
                             </label>
                           </div>
                           <div class="input-text">
-                            <label for="text">Коментар
+                            <label for="text">
+                                <p class="p-input-name">
+                                    Коментар
+                                </p>
                               <div class="search4">
                                 <textarea name="text" class="text-search" id="" cols="30" rows="10" placeholder="Введіть текст"></textarea>
                               </div>
@@ -117,7 +129,7 @@
                             Умови договору
                           </a>
                         </div>
-                        <button class="input-button">Відправити</button>
+                        <button type="submit" class="input-button">Відправити</button>
                       </div>
                     </div>
                   </div>
@@ -566,7 +578,7 @@
                     <label for="">
                         <input type="emeil" placeholder="E-mail" class="footer-input">
                     </label>
-                    <button class="button-footer-input">
+                    <button type="submit" class="button-footer-input">
                         <p class="button-text">Підписатися</p> 
                         <img src="./project/image/icon send.svg" alt="ups" class="icon-send">                           
                     </button>
@@ -574,5 +586,6 @@
             </div>
         </div>
     </footer>
+    <script src="./project/main.js"></script>
 </body>
 </html>
