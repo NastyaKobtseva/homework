@@ -106,7 +106,7 @@
     padding-bottom: 15px;
 }
 
-.button {
+.button-header-two-wow {
     cursor: pointer;
     background-color: #2196F3;
     -webkit-text-fill-color: rgb(253, 253, 253);
@@ -115,7 +115,7 @@
     height: 49px;
     top: 440px;
     left: 724px;
-    font-family: Roboto; 
+    font-family: 'Roboto'; 
     font-size: 17px;
     font-weight: 700;
     line-height: 25px;
@@ -293,7 +293,7 @@
     opacity: 1;
 }
   
-h1 {
+.h1-header-two-wow {
     width: 696px;
     height: 120px;
     top: 280px;
@@ -308,6 +308,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     width: 15em;
+    padding-bottom: 15px;
 }
 
 .our-team {
@@ -659,7 +660,7 @@ li {
     top: 50%;
     left: 50%;
     width: 528px;
-    height: 545px;
+    height: 550px;
     flex-shrink: 0;
     padding: 15px;
     background-color: rgb(255, 255, 255);
@@ -679,29 +680,7 @@ li {
     letter-spacing: 0.6px;
     margin-top: 16px;
   }
-  
-  h1 {
-    font-family: "Playfair Display", serif;
-    font-size: 44px;
-    font-weight: 900;
-    color: rgb(0, 0, 255);
-  }
-  
-  h1::first-letter {
-    font-size: 72px;
-    color: aqua;
-  }
-  
-  ::-moz-selection {
-    background-color: lightslategray;
-    color: aqua;
-  }
-  
-  ::selection {
-    background-color: lightslategray;
-    color: aqua;
-  }
-  
+
   .btn {
     fill: #000000;
     float: right;
