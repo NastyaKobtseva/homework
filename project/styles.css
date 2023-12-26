@@ -38,6 +38,16 @@
     fill: #2196F3;
 }
 
+.emeil-1, 
+.number-1 {
+    transition: color 0.3s, transform 0.3s linear;
+}
+
+.emeil-1:hover,
+.number-1:hover {
+    transform: translateY(-10px);
+}
+
 .item a {
     text-decoration: none;
     margin-right: 20px;
@@ -126,6 +136,11 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     flex-shrink: 0;
     border: none;
+    transition: transform 0.3s linear;
+}
+
+.button-header-two-wow:hover {
+    transform: scale(1.2);
 }
 
 .pho {
@@ -148,6 +163,21 @@
     justify-content: space-evenly;
     margin-top: 94px;
     margin-bottom: 94px;
+}
+
+.attention-to-detil-all, 
+.punctuality, 
+.planninig-photo-text, 
+.modern-technology {
+    cursor: pointer;
+    transition: transform 0.3s linear;
+}
+
+.attention-to-detil-all:hover, 
+.punctuality:hover, 
+.planninig-photo-text:hover, 
+.modern-technology:hover {
+    transform: translateY(-50px);
 }
 
 .photo-attention-to-detil, .photo-clock, .photo-planning, .photo-astronaut {
@@ -203,6 +233,11 @@
 
 .smain-photo1 {
     position: relative;
+    transition: transform 0.3s linear;
+}
+
+.smain-photo1:hover {
+    transform: scale(1.1);
 }
 
 .text1-smain {
@@ -234,7 +269,12 @@
 
 .smain-photo2 {
     position: relative;
+    transition: transform 0.3s linear;
 } 
+
+.smain-photo2:hover {
+    transform: scale(1.1);
+}
 
 .text2-smain {
     position: absolute;
@@ -265,6 +305,11 @@
 
 .smain-photo3 {
     position: relative;
+    transition: transform 0.3s linear;
+}
+
+.smain-photo3:hover {
+    transform: scale(1.1);
 }
 
 .text3-smain {
@@ -329,6 +374,11 @@
     display: flex; 
     flex-direction: column; 
     align-items: center;
+    transition: transform 0.3s linear;
+}
+
+.card:hover {
+    transform: translateY(30px);
 }
 
 .card-igor, .card-olga, .card-mt, .card-m {
@@ -357,11 +407,35 @@
     background-color: #fff;
     border-radius: 50%;
     fill: #AFB1B8;
+    transition: transform 0.3s linear;
 }
 
 .social:hover {
     background-color: #087df9;
     fill: #fff;
+    transform: scale(1.1);
+}
+
+.svg-footer {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.menu-item-footer {
+    transition: transform 0.3s linear;
+    padding-bottom: 20px;
+}
+
+.menu-item-footer:hover {
+    transform: translateX(12%);
+}
+
+.link-footer {
+    transition: color 0.3s;
+}
+
+.link-footer:hover {
+    color: #087df9;
 }
 
 .social-networks-footer {
@@ -375,10 +449,12 @@
     background-color: #43444d;
     border-radius: 50%;
     fill: white;
+    transition: transform 0.3s linear;
 }
 
 .social-networks-insta-footer:hover {
     background-color: #087df9;
+    transform: rotate(360deg) scale(1.2);
 }
 
 h2 {
@@ -420,12 +496,13 @@ h3, .h3-regular-customers {
     border-radius: 4px;
     border: 2px solid #AFB1B8;
     cursor: pointer;
-    transition: fill 0.3s;
+    transition: fill 0.3s, transform 0.3s linear;
 }
 
 .photo-regular-customers2-1:hover {
     fill: #2196F3;
     border: 2px solid #2196F3;
+    transform: scale(1.1);
 }
 
 .photo-regular-customers2-2 {
@@ -434,12 +511,13 @@ h3, .h3-regular-customers {
     border-radius: 4px;
     border: 2px solid #AFB1B8;
     cursor: pointer;
-    transition: fill 0.3s;
+    transition: fill 0.3s, transform 0.3s linear;
 }
 
 .photo-regular-customers2-2:hover {
     fill: #2196F3;
     border: 2px solid #2196F3;
+    transform: scale(1.1);
 }
 
 .photo-regular-customers2-3 {
@@ -448,40 +526,43 @@ h3, .h3-regular-customers {
     border-radius: 4px;
     border: 2px solid #AFB1B8;
     cursor: pointer;
-    transition: fill 0.3s;
+    transition: fill 0.3s, transform 0.3s linear;
 }
 
 .photo-regular-customers2-3:hover {
     fill: #2196F3;
     border: 2px solid #2196F3;
+    transform: scale(1.1);
 }
 
 .photo-regular-customers2-4 {
     width: 58px;
     height: 57px;
-      border-radius: 4px;
-      border: 2px solid #AFB1B8;
-      cursor: pointer;
-    transition: fill 0.3s;
+    border-radius: 4px;
+    border: 2px solid #AFB1B8;
+    cursor: pointer;
+    transition: fill 0.3s, transform 0.3s linear;
 }
 
 .photo-regular-customers2-4:hover {
     fill: #2196F3;
     border: 2px solid #2196F3;
+    transform: scale(1.1);
 }
 
 .photo-regular-customers2-5{
     width: 70px;
     height: 59px;
-      border-radius: 4px;
-      border: 2px solid #AFB1B8;
-      cursor: pointer;
-    transition: fill 0.3s;
+    border-radius: 4px;
+    border: 2px solid #AFB1B8;
+    cursor: pointer;
+    transition: fill 0.3s, transform 0.3s linear;
 }
 
 .photo-regular-customers2-5:hover {
     fill: #2196F3;
     border: 2px solid #2196F3;
+    transform: scale(1.1);
 }
 
 .photo-regular-customers2-6 {
@@ -490,12 +571,13 @@ h3, .h3-regular-customers {
     border-radius: 4px;
     border: 2px solid #AFB1B8;
     cursor: pointer;
-    transition: fill 0.3s;
+    transition: fill 0.3s, transform 0.3s linear;
 }
 
 .photo-regular-customers2-6:hover {
     fill: #2196F3;
     border: 2px solid #2196F3;
+    transform: scale(1.1);
 }
 
 .photo-regular-customers2-1 {
@@ -584,10 +666,11 @@ h3, .h3-regular-customers {
     border: none;
     background: #2196F3;
     cursor: pointer;
+    transition: transform 0.3s linear;
 }
 
-.footer-input {
-    padding-left: 10px;
+.button-footer-input:hover {
+    transform: scale(1.1);
 }
 
 .input-and-social-networks {
@@ -602,6 +685,13 @@ h3, .h3-regular-customers {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.30);
     border-radius: 4px;
+    padding-left: 10px;
+    outline: none;
+    transition: transform 0.3s linear;
+}
+
+.footer-input:hover {
+    transform: translateY(-5px);
 }
 
 .button-text {
@@ -620,6 +710,12 @@ h3, .h3-regular-customers {
 .icon-send {
     padding-left: 10px;
     padding-top: 9px;
+    transition: transform 0.3s linear;
+    cursor: pointer;
+}
+
+.icon-send:hover {
+    transform: rotate(360deg);
 }
 
 a {
@@ -693,12 +789,14 @@ li {
     text-align: center;
     border-radius: 30px;
     stroke-width: 1px;
+    transition: transform 0.3s linear;
   }
   
   .btn:hover, .btn:focus { 
     fill: #188CE8; 
     text-decoration: none; 
     cursor: pointer; 
+    transform: scale(1.2);
   }
   
   .text-after-input-but {
@@ -751,13 +849,11 @@ li {
     letter-spacing: 0.96px;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: transform 0.3s linear;
   }
   
   .input-button:hover {
-    background-color: transparent;
-    border: 2px solid #2196F3;
-    color: #000000;
+    transform: scale(1.1);
   }
   
   .input-name, .input-tel, .input-emeil {
@@ -769,6 +865,13 @@ li {
     line-height: normal;
     letter-spacing: 0.12px;
     padding-top: 12px;
+    transition: transform 0.3s linear;
+  }
+
+  .input-name:hover, 
+  .input-tel:hover, 
+  .input-emeil:hover {
+    transform: translateY(-7px);
   }
 
   .p-input-name {
@@ -784,6 +887,11 @@ li {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    transition: transform 0.3s linear;
+  }
+
+  .input-text:hover {
+    transform: translateY(-7px);
   }
   
   .name-search {

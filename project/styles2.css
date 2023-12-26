@@ -42,6 +42,16 @@
     fill: #2196F3;
 }
 
+.emeil-1, 
+.number-1 {
+    transition: color 0.3s, transform 0.3s linear;
+}
+
+.emeil-1:hover,
+.number-1:hover {
+    transform: translateY(-10px);
+}
+
 .item a {
     text-decoration: none;
     margin-right: 20px;
@@ -110,7 +120,7 @@
 .text1-before-photo {
     width: 38px;
     height: 25px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s linear;
     color: black;
     font-size: 16px;
     border-radius: 5px;
@@ -123,7 +133,7 @@
 .text2-before-photo {
     width: 96px;
     height: 25px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s linear;
     color: black;
     font-size: 16px;
     border-radius: 5px;
@@ -136,7 +146,7 @@
 .text3-before-photo {
     width: 80px;
     height: 25px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s linear;
     color: black;
     font-size: 16px;
     border-radius: 5px;
@@ -149,7 +159,7 @@
 .text4-before-photo {
     width: 72px;
     height: 25px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s linear;
     color: black;
     font-size: 16px;
     border-radius: 5px;
@@ -162,7 +172,7 @@
 .text5-before-photo {
     width: 96px;
     height: 25px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s linear;
     color: black;
     font-size: 16px;
     border-radius: 5px;
@@ -179,7 +189,8 @@
 .text5-before-photo:hover {
     background-color: #2196F3;
     color: #FFFFFF;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.2);
 }
 
 .photo-text-all2 {
@@ -244,13 +255,14 @@
 .photo4-text, .photo5-text, .photo6-text , 
 .photo7-text, .photo8-text, .photo9-text {
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s linear;
 }
 
 .photo1-text:hover, .photo2-text:hover, .photo3-text:hover, 
 .photo4-text:hover, .photo5-text:hover, .photo6-text:hover, 
 .photo7-text:hover, .photo8-text:hover, .photo9-text:hover {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1) translateY(-10px);
 }
 
 .block1-photo-text {
@@ -296,6 +308,28 @@
     justify-content: space-around;
 }
 
+.svg-footer {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.menu-item-footer {
+    transition: transform 0.3s linear;
+    padding-bottom: 20px;
+}
+
+.menu-item-footer:hover {
+    transform: translateX(12%);
+}
+
+.link-footer {
+    transition: color 0.3s;
+}
+
+.link-footer:hover {
+    color: #087df9;
+}
+
 .footer-content-two {
     padding-left: 40px;
 }
@@ -336,6 +370,11 @@
     border: none;
     background: #2196F3;
     cursor: pointer;
+    transition: transform 0.3s linear;
+}
+
+.button-footer-input:hover {
+    transform: scale(1.1);
 }
 
 .footer-input {
@@ -354,6 +393,13 @@
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.30);
     border-radius: 4px;
+    padding-left: 10px;
+    outline: none;
+    transition: transform 0.3s linear;
+}
+
+.footer-input:hover {
+    transform: translateY(-5px);
 }
 
 .button-text {
@@ -372,6 +418,12 @@
 .icon-send {
     padding-left: 10px;
     padding-top: 9px;
+    transition: transform 0.3s linear;
+    cursor: pointer;
+}
+
+.icon-send:hover {
+    transform: rotate(360deg);
 }
 
 .insta, .twitter, .facebook, .in,
@@ -395,10 +447,12 @@
     background-color: #43444d;
     border-radius: 50%;
     fill: white;
+    transition: transform 0.3s linear;
 }
 
 .social-networks-insta-footer:hover {
     background-color: #087df9;
+    transform: rotate(360deg) scale(1.2);
 }
 
 a {
