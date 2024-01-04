@@ -192,6 +192,19 @@
     color: #FFFFFF;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transform: scale(1.2);
+    animation: colorText 7s infinite;
+}
+
+@keyframes colorText {
+    0% {
+        background-color: #2196F3;
+    }
+    45% {
+        background-color: #8321f3;
+    }
+    90% {
+        background-color: rgb(0, 85, 255);
+    }
 }
 
 .photo-text-all2 {
@@ -369,13 +382,75 @@
     height: 45px;
     border-radius: 4px;
     border: none;
-    background: #2196F3;
+    background-color: #2196F3;
     cursor: pointer;
     transition: transform 0.3s linear;
+    outline: none;
+    position: relative;
+    z-index: 0;
 }
 
 .button-footer-input:hover {
     transform: scale(1.1);
+    
+}
+
+.button-footer-input::before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 4px;
+}
+
+.button-footer-input:active {
+    color: #000
+}
+
+.button-footer-input:active:after {
+    background-color: transparent;
+}
+
+.button-footer-input:hover:before {
+    opacity: 1;
+}
+
+.button-footer-input:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2196F3;
+    left: 0;
+    top: 0;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button-footer-input:hover:after {
+    background-color: #000;
+}
+
+@keyframes glowing {
+    0% { 
+        background-position: 0 0; 
+    }
+    50% { 
+        background-position: 400% 0; 
+    }
+    100% { 
+        background-position: 0 0; 
+    }
 }
 
 .footer-input {
@@ -419,12 +494,7 @@
 .icon-send {
     padding-left: 10px;
     padding-top: 9px;
-    transition: transform 0.3s linear;
     cursor: pointer;
-}
-
-.icon-send:hover {
-    transform: rotate(360deg);
 }
 
 .insta, .twitter, .facebook, .in,
@@ -453,7 +523,20 @@
 
 .social-networks-insta-footer:hover {
     background-color: #087df9;
-    transform: rotate(360deg) scale(1.2);
+    transform: translateY(15px) scale(1.2) rotate(360deg);
+    animation: bg-colorText 7s infinite;
+}
+
+@keyframes bg-colorText {
+    0% {
+        background-color: #087df9;
+    }
+    45% {
+        background-color: #7408f9;
+    }
+    95% {
+        background-color: #0854f9;
+    }
 }
 
 a {

@@ -110,6 +110,10 @@
     align-items: center;
 }
 
+.text-button-header-two-wow {
+    text-align: center;
+}
+
 .text-after-header {
     display: flex;
     justify-content: space-around;
@@ -122,17 +126,14 @@
     background-color: #2196F3;
     -webkit-text-fill-color: rgb(253, 253, 253);
     margin: auto;
-    width: 189px;
-    height: 49px;
-    top: 440px;
-    left: 724px;
+    padding: 12px 20px;
     font-family: 'Roboto'; 
     font-size: 17px;
     font-weight: 700;
     line-height: 25px;
     letter-spacing: 0.06em; 
     text-align: center;
-    display: block;
+    /* display: block; */
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     flex-shrink: 0;
@@ -141,8 +142,49 @@
 }
 
 .button-header-two-wow:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
+
+.button-header-two-wow span {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s;
+    transform-origin: 50% 0;
+    transform-style: preserve-3d;
+}
+
+.csstransforms3d .button-header-two-wow span::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2196F3;
+    content: attr(data-hover);
+    transition: background-color 0.3s;
+    transform: rotateX(-90deg);
+    transform-origin: 50% 0;
+  }
+
+.button-header-two-wow:hover span,
+.button-header-two-wow:focus span {
+  transform: rotateX(90deg) translateY(-22px);
+}
+
+.csstransforms3d .button-header-two-wow:hover span::before,
+.csstransforms3d .button-header-two-wow:focus span::before {
+    background-color: #2196F3;
+}
+
+
+
+
+
+
+
+
+
+
 
 .pho {
     padding-left: 20px;
@@ -455,7 +497,20 @@
 
 .social-networks-insta-footer:hover {
     background-color: #087df9;
-    transform: rotate(360deg) scale(1.2);
+    transform: translateY(15px) scale(1.2) rotate(360deg);
+    animation: bg-colorText 7s infinite;
+}
+
+@keyframes bg-colorText {
+    0% {
+        background-color: #087df9;
+    }
+    45% {
+        background-color: #7408f9;
+    }
+    95% {
+        background-color: #0854f9;
+    }
 }
 
 h2 {
@@ -665,13 +720,75 @@ h3, .h3-regular-customers {
     height: 45px;
     border-radius: 4px;
     border: none;
-    background: #2196F3;
+    background-color: #2196F3;
     cursor: pointer;
     transition: transform 0.3s linear;
+    outline: none;
+    position: relative;
+    z-index: 0;
 }
 
 .button-footer-input:hover {
     transform: scale(1.1);
+    
+}
+
+.button-footer-input::before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 4px;
+}
+
+.button-footer-input:active {
+    color: #000
+}
+
+.button-footer-input:active:after {
+    background-color: transparent;
+}
+
+.button-footer-input:hover:before {
+    opacity: 1;
+}
+
+.button-footer-input:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2196F3;
+    left: 0;
+    top: 0;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button-footer-input:hover:after {
+    background-color: #000;
+}
+
+@keyframes glowing {
+    0% { 
+        background-position: 0 0; 
+    }
+    50% { 
+        background-position: 400% 0; 
+    }
+    100% { 
+        background-position: 0 0; 
+    }
 }
 
 .input-and-social-networks {
@@ -711,12 +828,7 @@ h3, .h3-regular-customers {
 .icon-send {
     padding-left: 10px;
     padding-top: 9px;
-    transition: transform 0.3s linear;
     cursor: pointer;
-}
-
-.icon-send:hover {
-    transform: rotate(360deg);
 }
 
 a {
@@ -862,10 +974,13 @@ li {
     font-family: 'Roboto';
     font-size: 12px;
     font-style: normal;
+    align-items: flex-start;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.12px;
     padding-top: 12px;
+    display: flex;
+    flex-direction: column;
     transition: transform 0.3s linear;
   }
 
@@ -884,6 +999,9 @@ li {
     padding-top: 10px;
     color: #757575;
     font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
