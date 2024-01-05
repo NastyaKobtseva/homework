@@ -77,11 +77,37 @@
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.3s ease;
+    animation: item-bg 5s infinite;
 }
 
 .list .item a:hover,
 .list .item a.active {
     color: #2196F3;
+    animation: itemText-color 5s infinite;
+}
+
+@keyframes item-bg {
+    0% {
+        background-color: #2196F3;
+    }
+    45% {
+        background-color: #5621f3;
+    }
+    95% {
+        background-color: #21b4f3;
+    }
+}
+
+@keyframes itemText-color {
+    0% {
+        color: #2196F3;
+    }
+    45% {
+        color: #5621f3;
+    }
+    95% {
+        color: #21b4f3;
+    }
 }
 
 .list .item a:hover::after,
