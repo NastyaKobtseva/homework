@@ -208,7 +208,7 @@
 .header-two-wow { 
     height: 500px;
     top: 80px;
-    background-image: url('./image/Img.header.png');
+    background-image: url('../image/Img.header.png');
     background-size: cover;
     margin: 0 auto; 
     padding: 0 20px; 
@@ -1068,14 +1068,14 @@ li {
     padding: 5px 25px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
-    background-image: url('./image/person-black-18dp\ 1.svg');
+    background-image: url('../image/person-black-18dp\ 1.svg');
     background-size: 18px 18px;
     background-repeat: no-repeat;
     background-position: 0 50%;
   }
   
   .name-search:focus, .name-search:focus-visible {
-    background-image: url('./image/person-black-18dp\ 1\ \(1\).svg');
+    background-image: url('../image/person-black-18dp\ 1\ \(1\).svg');
     border: none;
     outline: 2px solid #188CE8;
   }
@@ -1086,14 +1086,14 @@ li {
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
     padding: 5px 25px;
-    background-image: url('./image/phone-black-18dp\ 1.svg');
+    background-image: url('../image/phone-black-18dp\ 1.svg');
     background-size: 18px 18px;
     background-repeat: no-repeat;
     background-position: 0 50%;
   }
   
   .tel-search:focus, .tel-search:focus-visible {
-    background-image: url('./image/phone-black-18dp\ 1\ —\ копия.svg');
+    background-image: url('../image/phone-black-18dp\ 1\ —\ копия.svg');
     border: none;
     outline: 2px solid #188CE8;
   }
@@ -1104,14 +1104,14 @@ li {
     padding: 5px 25px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.20);
-    background-image: url('./image/email-black-18dp\ 1.svg');
+    background-image: url('../image/email-black-18dp\ 1.svg');
     background-size: 18px 18px;
     background-repeat: no-repeat;
     background-position: 0 50%;
   }
   
   .emeil-search:focus, .emeil-search:focus-visible {
-    background-image: url(./image/email-black-18dp\ 1\ —\ копия.svg);
+    background-image: url('../image/email-black-18dp\ 1\ —\ копия.svg');
     border: none;
     outline: 2px solid #188CE8;
   }
