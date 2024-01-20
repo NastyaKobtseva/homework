@@ -1,0 +1,206 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    text-indent: 50px;
+    gap: 10px;
+}
+
+.item_i { 
+    display: flex; 
+    justify-content: space-around; 
+    text-decoration: none; 
+    color: black; 
+    padding-right: 50px; 
+    margin-right: 50px; 
+}
+
+.item {
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    padding-right: 15px; 
+    margin-right: 15px;
+    cursor: pointer;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.item:hover,
+.emeil:hover,
+.number:hover {
+    color: #2196F3;
+    fill: #2196F3;
+}
+
+.emeil-1, 
+.number-1 {
+    transition: color 0.3s, transform 0.3s linear;
+}
+
+.emeil-1:hover,
+.number-1:hover {
+    transform: translateY(-10px);
+}
+
+.list .item a {
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px;
+    color: #000;
+    transition: color 0.3s ease;
+    position: relative;
+    letter-spacing: 0.28px;
+    line-height: normal;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.list .item a::after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 2.5px;
+    background-color: #2196F3;
+    bottom: -14px;
+    left: 32px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+    animation: item-bg 5s infinite;
+}
+
+.list .item a:hover,
+.list .item a.active {
+    color: #2196F3;
+    animation: itemText-color 5s infinite;
+}
+
+@keyframes item-bg {
+    0% {
+        background-color: #2196F3;
+    }
+    45% {
+        background-color: #5621f3;
+    }
+    95% {
+        background-color: #21b4f3;
+    }
+}
+
+@keyframes itemText-color {
+    0% {
+        color: #2196F3;
+    }
+    45% {
+        color: #5621f3;
+    }
+    95% {
+        color: #21b4f3;
+    }
+}
+
+.list .item a:hover::after,
+.list .item a.active::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.emeil {
+    text-decoration: none;
+    color: black;
+}
+
+.number {
+  text-decoration: none; 
+  color: black;
+}
+
+.text-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    justify-content: space-around;
+    text-indent: 50px;
+    gap: 10px;
+    align-items: center;
+}
+
+.text-button-header-two-wow {
+    text-align: center;
+}
+
+.text-after-header {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.button-header-two-wow {
+    cursor: pointer;
+    background-color: #2196F3;
+    -webkit-text-fill-color: rgb(253, 253, 253);
+    margin: auto;
+    padding: 12px 20px;
+    font-family: 'Roboto'; 
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.06em; 
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    flex-shrink: 0;
+    border: none;
+    transition: transform 0.3s linear;
+}
+
+.button-header-two-wow:hover {
+    transform: scale(1.1);
+}
+
+.button-header-two-wow span {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s;
+    transform-origin: 50% 0;
+    transform-style: preserve-3d;
+}
+
+.csstransforms3d .button-header-two-wow span::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2196F3;
+    content: attr(data-hover);
+    transition: background-color 0.3s;
+    transform: rotateX(-90deg);
+    transform-origin: 50% 0;
+  }
+
+.button-header-two-wow:hover span,
+.button-header-two-wow:focus span {
+  transform: rotateX(90deg) translateY(-22px);
+}
+
+.csstransforms3d .button-header-two-wow:hover span::before,
+.csstransforms3d .button-header-two-wow:focus span::before {
+    background-color: #2196F3;
+}
+
+.pho {
+    padding-left: 20px;
+}
