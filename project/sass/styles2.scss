@@ -1,8 +1,13 @@
 @import 'scss/header2';
 @import 'scss/footer2';
-.text-before-photo {
+@import 'scss/variables2';
+@mixin flex-justify () {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.text-before-photo {
+    @include flex-justify (flex, center);
     margin-top: 94px;
 }
 
@@ -14,82 +19,105 @@
     width: 38px;
     height: 25px;
     transition: background-color 0.3s, transform 0.3s linear;
-    color: black;
+    color: $color-black;
     font-size: 16px;
     border-radius: 5px;
     flex-shrink: 0;
     padding-left: 16px;
     padding-top: 8px;
-    background-color: rgb(241, 239, 239);
+    background-color: $color-bg-white-rgb;
+    &:hover {
+        background-color: $color-bg-blue;
+        color: $color-white;
+        box-shadow: 0 4px 8px $color-box-shadow;
+        transform: scale(1.2);
+        animation: colorText 7s infinite;
+    }
 }
 
 .text2-before-photo {
     width: 96px;
     height: 25px;
     transition: background-color 0.3s, transform 0.3s linear;
-    color: black;
+    color: $color-black;
     font-size: 16px;
     border-radius: 5px;
     flex-shrink: 0;
-    background-color: rgb(241, 239, 239);
+    background-color: $color-bg-white-rgb;
     padding-top: 8px;
     padding-left: 22px;
+    &:hover {
+        background-color: $color-bg-blue;
+        color: $color-white;
+        box-shadow: 0 4px 8px $color-box-shadow;
+        transform: scale(1.2);
+        animation: colorText 7s infinite;
+    }
 }
 
 .text3-before-photo {
     width: 80px;
     height: 25px;
     transition: background-color 0.3s, transform 0.3s linear;
-    color: black;
+    color: $color-black;
     font-size: 16px;
     border-radius: 5px;
     flex-shrink: 0;
-    background-color: rgb(241, 239, 239);
+    background-color: $color-bg-white-rgb;
     padding-top: 8px;
     padding-left: 22px;
+    &:hover {
+        background-color: $color-bg-blue;
+        color: $color-white;
+        box-shadow: 0 4px 8px $color-box-shadow;
+        transform: scale(1.2);
+        animation: colorText 7s infinite;
+    }
 }
 
 .text4-before-photo {
     width: 72px;
     height: 25px;
     transition: background-color 0.3s, transform 0.3s linear;
-    color: black;
+    color: $color-black;
     font-size: 16px;
     border-radius: 5px;
     flex-shrink: 0;
-    background-color: rgb(241, 239, 239);
+    background-color: $color-bg-white-rgb;
     padding-top: 8px;
     padding-left: 22px;
+    &:hover {
+        background-color: $color-bg-blue;
+        color: $color-white;
+        box-shadow: 0 4px 8px $color-box-shadow;
+        transform: scale(1.2);
+        animation: colorText 7s infinite;
+    }
 }
 
 .text5-before-photo {
     width: 96px;
     height: 25px;
     transition: background-color 0.3s, transform 0.3s linear;
-    color: black;
+    color: $color-black;
     font-size: 16px;
     border-radius: 5px;
     flex-shrink: 0;
-    background-color: rgb(241, 239, 239);
+    background-color: $color-bg-white-rgb;
     padding-top: 8px;
     padding-left: 22px;
-}
-
-.text1-before-photo:hover,
-.text2-before-photo:hover,
-.text3-before-photo:hover,
-.text4-before-photo:hover,
-.text5-before-photo:hover {
-    background-color: #2196F3;
-    color: #FFFFFF;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transform: scale(1.2);
-    animation: colorText 7s infinite;
+    &:hover {
+        background-color: $color-bg-blue;
+        color: $color-white;
+        box-shadow: 0 4px 8px $color-box-shadow;
+        transform: scale(1.2);
+        animation: colorText 7s infinite;
+    }
 }
 
 @keyframes colorText {
     0% {
-        background-color: #2196F3;
+        background-color: $color-bg-blue;
     }
     45% {
         background-color: #8321f3;
@@ -121,7 +149,7 @@
     font-size: 20px;
     font-weight: 400;
     color: #fff;
-    background-color: rgba(33, 150, 243, 0.90);
+    background-color: $color-blue;
     padding: 63px;
     opacity: 0;
     width: 322px;
@@ -152,7 +180,7 @@
 .p-photo4-text, .p-photo5-text, .p-photo6-text, 
 .p-photo7-text, .p-photo9-text, .p-photo8-text {
     font-size: 16px;
-    color: #7e808c;
+    color: $color-gray;
     padding-top: 19px;
     padding-bottom: 20px;
 }
@@ -162,32 +190,23 @@
 .photo7-text, .photo8-text, .photo9-text {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s linear;
-}
-
-.photo1-text:hover, .photo2-text:hover, .photo3-text:hover, 
-.photo4-text:hover, .photo5-text:hover, .photo6-text:hover, 
-.photo7-text:hover, .photo8-text:hover, .photo9-text:hover {
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
-    transform: scale(1.1) translateY(-10px);
+    &:hover {
+        box-shadow: 0 0 10px 5px $color-box-shadow-black;
+        transform: scale(1.1) translateY(-10px);
+    }
 }
 
 .block1-photo-text {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex-justify(flex, space-evenly, center);
 }
 
 .block2-photo-text {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex-justify(flex, space-evenly, center);
     margin-top: 35px;
 }
 
 .block3-photo-text {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex-justify(flex, space-evenly, center);
     margin-top: 50px;
     margin-bottom: 94px;
 }
@@ -199,4 +218,3 @@
     padding-left: 24px;
     padding-top: 20px;
 }
-

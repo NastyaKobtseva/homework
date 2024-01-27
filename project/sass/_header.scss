@@ -3,7 +3,7 @@
     justify-content: space-around;
 }
 
-.list {
+.navigation__list {
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
@@ -20,7 +20,7 @@
     margin-right: 50px; 
 }
 
-.item {
+.navigation__list-item {
     display: flex;
     justify-content: space-around;
     color: black;
@@ -29,26 +29,27 @@
     cursor: pointer;
     transition: color 0.3s;
     position: relative;
+    &:hover {
+        color: #2196F3;
+        fill: #2196F3;
+    }
 }
 
-.item:hover,
-.emeil:hover,
-.number:hover {
-    color: #2196F3;
-    fill: #2196F3;
-}
-
-.emeil-1, 
+.emeil-content, 
 .number-1 {
     transition: color 0.3s, transform 0.3s linear;
+    &:hover {
+        transform: translateY(-10px);
+    }
 }
 
-.emeil-1:hover,
-.number-1:hover {
-    transform: translateY(-10px);
+
+.emeil {
+    text-decoration: none;
+    color: black;
 }
 
-.list .item a {
+.navigation__list .navigation__list-item a {
     text-decoration: none;
     margin-right: 20px;
     padding: 10px;
@@ -60,26 +61,27 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-}
-
-.list .item a::after {
-    content: "";
-    position: absolute;
-    width: 90%;
-    height: 2.5px;
-    background-color: #2196F3;
-    bottom: -14px;
-    left: 32px;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s ease;
-    animation: item-bg 5s infinite;
-}
-
-.list .item a:hover,
-.list .item a.active {
-    color: #2196F3;
-    animation: itemText-color 5s infinite;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 90%;
+        height: 2.5px;
+        background-color: #2196F3;
+        bottom: -14px;
+        left: 32px;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s ease;
+        animation: item-bg 5s infinite;
+    }
+    &:hover, &.active {
+        color: #2196F3;
+        animation: itemText-color 5s infinite;
+    }
+    &:hover::after, &.active::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
 }
 
 @keyframes item-bg {
@@ -106,29 +108,22 @@
     }
 }
 
-.list .item a:hover::after,
-.list .item a.active::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-.emeil {
-    text-decoration: none;
-    color: black;
-}
-
 .number {
   text-decoration: none; 
   color: black;
+  &:hover {
+    color: #2196F3;
+    fill: #2196F3;
+  }
 }
 
-.text-header {
+.navigation {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.right {
+.navigation-right {
     display: flex;
     justify-content: space-around;
     text-indent: 50px;
@@ -140,7 +135,7 @@
     text-align: center;
 }
 
-.text-after-header {
+.header__content {
     display: flex;
     justify-content: space-around;
     padding-top: 15px; 
@@ -164,10 +159,9 @@
     flex-shrink: 0;
     border: none;
     transition: transform 0.3s linear;
-}
-
-.button-header-two-wow:hover {
-    transform: scale(1.1);
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .button-header-two-wow span {
@@ -176,20 +170,19 @@
     transition: transform 0.3s;
     transform-origin: 50% 0;
     transform-style: preserve-3d;
+    .csstransforms3d &::before {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #2196F3;
+        content: attr(data-hover);
+        transition: background-color 0.3s;
+        transform: rotateX(-90deg);
+        transform-origin: 50% 0;
+    }
 }
-
-.csstransforms3d .button-header-two-wow span::before {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #2196F3;
-    content: attr(data-hover);
-    transition: background-color 0.3s;
-    transform: rotateX(-90deg);
-    transform-origin: 50% 0;
-  }
 
 .button-header-two-wow:hover span,
 .button-header-two-wow:focus span {

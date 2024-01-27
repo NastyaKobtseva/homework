@@ -33,13 +33,10 @@
     margin-right: 15px;
     cursor: pointer;
     transition: color 0.3s;
-}
-
-.item:hover,
-.emeil:hover,
-.number:hover {
-    color: #2196F3;
-    fill: #2196F3;
+    &:hover {
+        color: #2196F3;
+        fill: #2196F3;
+    }
 }
 
 .emeil-1, 
@@ -119,11 +116,19 @@
 .emeil {
     text-decoration: none;
     color: black;
+    &:hover {
+        color: #2196F3;
+        fill: #2196F3;
+    }
 }
 
 .number {
   text-decoration: none; 
   color: black;
+  &:hover {
+    color: #2196F3;
+    fill: #2196F3;
+  }
 }
 
 .right {
